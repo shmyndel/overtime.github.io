@@ -1,0 +1,252 @@
+
+      
+
+      .padl{
+        padding-left: 0px;
+      }
+      
+      img{
+        width: 100%;
+      }
+
+      a{
+        border-bottom: 1px solid rgba(65,70,148,0.3);
+        text-decoration: none;
+        color: rgb(65,70,148);
+        cursor: pointer;
+        transition:color .25s ease-out;
+      }
+
+      a:hover{
+        text-decoration: none;
+        border-bottom: 1px solid rgba(79,168,159,0.3);
+        color: rgb(79,168,159);
+        transition:none;
+      }
+
+
+      body{
+        background-color: #f0eee8;
+        font-size: 15px;
+        font-family: 'Lora', serif;
+        color:#000000;
+      }
+      p{
+        font-size: 0.86666667em;
+        margin-bottom: 0;
+      }
+
+      h1{
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        font-size: 5em;
+        margin-top: 0px;
+      }
+
+      h2{
+        font-weight: 700;
+        font-size: 0.86666667em;
+        margin-bottom: 0.2em;
+        margin-top: 0px;
+        }
+      
+      .description{
+        padding-top: 1.6em;
+        font-size: 0.86666667em;
+        width: 10em;
+        }
+
+        .des{
+          padding-left: 1.5em;
+        }
+
+       .header{
+        margin-top: 1em;
+       }
+
+       .button{
+        background-color: #414694;
+        font-family: Arial;
+        font-size: 1em;
+        color: #ffffff;
+        padding: 1em 1em 1em 1em;
+        margin-top: 1.4em;
+        border-radius: 0.4em;
+        text-align: center;
+        transition:opacity .25s ease-out;
+       }
+
+       .button:hover{
+        opacity: 0.8;
+        transition:none;
+       }
+
+       .fotor{
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+       }
+
+       .bor{
+        border-right: 1px solid #c0c0c0;
+        padding-right: 4em;
+       }
+
+       .price{
+        font-size: 3.5em;
+        margin-bottom: -0.2em;
+       }
+
+       .options{
+        margin-bottom:3em;
+       }
+       
+       .semoptions{
+        margin-bottom: 4.4em;
+       }
+
+       .sem{
+        padding-right: 6em;
+       }
+
+       .rouble{
+        font-family: "PT serif";
+       }
+
+       .solid{
+        border-top: 3px solid #000000;
+       }
+
+       .thin{
+        border-top: 1px solid #c0c0c0;
+        margin-top: 3em;
+        margin-bottom: 0.7em;
+       }
+
+       .avatar{
+        width: 50px;
+        padding-right: 0;
+       }
+
+       .name{
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-top: 0.5em;
+       }
+
+       .quote{
+        font-size: 3.5em;
+        font-weight: 400;
+        margin-bottom: 1.5em;
+       }
+        
+       .speech{
+        line-height: 155%;
+        margin-bottom: 1.2em;
+       }
+
+       .owner{
+        margin-top: 0.6em;
+        margin-bottom: 1em;
+       }
+      
+      iframe{
+        margin-top: 1em;
+      }
+
+      .cut{
+        font-weight: 600;
+        font-size: 1.3em;
+        margin-bottom: 1.1em;
+        line-height: 125%;
+      }
+
+      .social{
+        width: 50px;
+        margin-top: 0.1em;
+        transition:opacity .25s ease-out;
+      }
+
+      .social:hover{
+        opacity: 0.8;
+        transition:none;
+
+      }
+
+      .vk{
+        padding-left: 1.3em;
+      }
+
+      .jury{
+        text-align: right;
+      }
+
+      .footer{
+        margin-bottom: 1.2em;
+      }
+      
+      @media(max-width: 991px){
+
+        .padl{
+          padding-left: 1em;
+        }
+
+        .quote{
+          font-size: 2.5em;
+        }
+
+        .price{
+          font-size: 2.5em;
+        }
+
+
+
+        .bor{
+          margin-bottom: 0;
+          padding-right: 1em;
+        }
+        
+        .sem{
+          padding-right: 0em;
+        }
+
+        .semoptions{
+          margin-bottom: 3em;
+        }
+
+        .column{
+          margin-top: 2.2em;
+        }
+
+      }
+
+@media(max-width: 767px){
+
+        h1{
+          text-align: center;
+          font-size: 4em;
+        }
+
+        .button{
+          margin-bottom: 0;
+        }
+
+        .wom{
+          border-right: 0px;
+        }
+
+        .sem{
+          padding-right: 2em;
+        }
+
+        .jury{
+          text-align: left;
+          margin-top: 0.5em;
+        }
+
+        iframe{
+          margin-bottom: 1em;
+        }
+
+      }
+
+
