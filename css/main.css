@@ -1,6 +1,9 @@
 
+       @font-face {
+      font-family: Lora; /* Гарнитура шрифта */
+      src: url(fonts/Lora-Regular.ttf); /* Путь к файлу со шрифтом */
+      }
       
-
       .padl{
         padding-left: 0px;
       }
