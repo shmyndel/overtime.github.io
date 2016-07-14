@@ -217,8 +217,18 @@
                         var beachMarker = new google.maps.Marker({
                             position: {lat: 55.745909, lng: 37.56001100000003},
                             map: map,
-                            icon: image
+                            icon: image,
+                            animation: google.maps.Animation.DROP,
                         });
+                        marker.addListener('click', toggleBounce);
+}
+
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
                         }
 
                         </script>
