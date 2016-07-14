@@ -211,10 +211,8 @@
                                 {hue: '#b69f5b'},
                                 {visibility: 'simplified'},
                                 {gamma: 0.5},
-                                {weight: 0.5}
-                                ]
-                                },
-                            {
+                                {weight: 0.5}]},
+                                {
                                 elementType: 'labels',
                                 stylers: [{visibility: 'on'}]
                                 },
@@ -230,6 +228,7 @@
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
     center: {lat: 55.745909, lng: 37.56001100000003},  // Brooklyn.
+    disableDefaultUI: true
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
     }
