@@ -202,44 +202,28 @@
                 <p>Большая Дорогомиловская улица, дом 5</p>
                     
                     <!--Карта-->
-                        <div id="map" style="height:405px;"></div>
-                        <script>
-                            function initMap() {
-                            var customMapType = new google.maps.StyledMapType([
-                                {
-                                stylers: [
-                                {hue: '#b69f5b'},
-                                {visibility: 'simplified'},
-                                {gamma: 0.5},
-                                {weight: 0.5}]},
-                                {
-                                elementType: 'labels',
-                                stylers: [{visibility: 'on'}]
-                                },
-                            {
-                                featureType: 'water',
-                                stylers: [{color: '#f0eee8'}]
-                                }
-                                ], {
-                                name: 'Custom Style'
-                            });
-  var customMapTypeId = 'custom_style';
+                        <div id="map"></div>
+    <script>
 
+// This example adds a marker to indicate the position of Bondi Beach in Sydney,
+// Australia.
+function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
-    center: {lat: 55.745909, lng: 37.56001100000003},  // Brooklyn.
-    mapTypeControlOptions: {
-      mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
-    }
+    zoom: 4,
+    center: {lat: -33, lng: 151}
   });
 
-  map.mapTypes.set(customMapTypeId, customMapType);
-  map.setMapTypeId(customMapTypeId);
+  var image = 'images/beachflag.png';
+  var beachMarker = new google.maps.Marker({
+    position: {lat: -33.890, lng: 151.274},
+    map: map,
+    icon: image
+  });
 }
 
-                        </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdBX4LWS-zX-jWn90lDSaLZ0dn4a5M7oI&callback=initMap"
-        async defer></script>
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdBX4LWS-zX-jWn90lDSaLZ0dn4a5M7oI&signed_in=true&callback=initMap"></script>
 
             </div>
 
