@@ -194,25 +194,24 @@
                 <p>Большая Дорогомиловская улица, дом 5</p>
                     
                     <!--Карта-->
-                    <div id="map"></div>
-                <script type="text/javascript">
+                   <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyB60R9mjuxDz-wh6nlqqASj5ZpcCOQosII'></script> 
+                     
+                    <div style='height:410px;width:98%;'>
+                      <div id='gmap_canvas' style='height:410px;width:100%;'></div>
+                      <style>
+                      #gmap_canvas img{max-width:none!important;background:none!important}
+                      </style>
+                    </div>
+                    <a href='http://maps-generator.com/ru'></a> 
+                    <script src=
+                    'https://embedmaps.com/google-maps-authorization/script.js?id=dc683361b8f6ac89967cb61bc541ac25165c0f19'
+                    type='text/javascript'>
+                    </script>
+                    <script type='text/javascript'>
+                    function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(55.74566905819295,37.563470680178874),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(55.74566905819295,37.563470680178874)});infowindow = new google.maps.InfoWindow({content:'<strong>Хостел «Овертайм»<\/strong><br>Большая дорогомиловская 5<br>Москва<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
 
-                                var map;
-                                   function initialize() {
-                  var myLatlng = new google.maps.LatLng(45.434062,12.339077);
-                  var myOptions = {
-             -      zoom: 19,
-             +      zoom: 18,
-                    center: myLatlng,
-                    mapTypeId: google.maps.MapTypeId.SATELLITE,
-                    tilt: 45,
-                      });
-                    }
-
-                </script>
-                <script async defer
-                src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAdBX4LWS-zX-jWn90lDSaLZ0dn4a5M7oI&callback=initMap">
-                </script>
+                    <div id='map'></div>
 
             </div>
 
