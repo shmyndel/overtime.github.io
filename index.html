@@ -215,11 +215,32 @@
                         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
                         // Australia.
                         function initMap() {
+                            var customMapType = new google.maps.StyledMapType([
+                            {
+                            stylers: [
+                            {hue: '#890000'},
+                            {visibility: 'simplified'},
+                            {gamma: 0.5},
+                            {weight: 0.5}
+                            ]
+                            },
+                            {
+                            elementType: 'labels',
+                            stylers: [{visibility: 'off'}]
+                            },
+                            {
+                            featureType: 'water',
+                            stylers: [{color: '#890000'}]
+                            }
+                            ], {
+                            name: 'Custom Style'
+                            });
+                            
+                            var customMapTypeId = 'custom_style';
                             var map = new google.maps.Map(document.getElementById('map'), {
                             zoom: 15,
                             center: {lat: 55.745909, lng: 37.56001100000003},
                             disableDefaultUI: true,
-                            animation: google.maps.Animation.DROP
                             });
 
                         var image = 'img/marker.png';
@@ -228,6 +249,9 @@
                             map: map,
                             icon: image,
                         });
+                        
+                        map.mapTypes.set(customMapTypeId, customMapType);
+                        map.setMapTypeId(customMapTypeId);
 
          
                         }
