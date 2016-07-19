@@ -1,8 +1,6 @@
       @font-face {
       font-family: Lora;
-      src: img/Lora-regular.ttf,
-
-      font-weight: bold;
+      src: src: url(fonts/Lora-regular.ttf);
       }
 
 
